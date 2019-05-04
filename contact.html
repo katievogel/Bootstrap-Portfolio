@@ -2,49 +2,48 @@
 <html lang="en-us">
 <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" type="text/css" href="Assets/CSS/style.css">
-
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="Assets/CSS/style.css">   
 </head>
 <body>
     <div class="header-space">
         <header>
-            <h1 class="header-name">Katie Vogel</h1>
-        <div class="navbar">
-            <a class="index" href="index.html">About</a>
-            <a class="portfolio" href="portfolio.html">Portfolio</a>
-            <a class="contact" href="contact.html">Contact</a> 
-        </div>
+        <nav class="navbar fixed-top navbar-expand-sm navbar-light">
+            <a class="navbar-brand">Katie Vogel</a>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup"></div>
+                    <div class="navbar-nav">
+                        <a class="nav-item nav-link" href="index.html">About <span class="sr-only">(current)</span></a>
+                            <a class="nav-item nav-link" href="portfolio.html">Portfolio</a>
+                                <a class="nav-item nav-link" href="contact.html">Contact</a>
+                    </div>
+                </div>
+        </nav>
         </header>
-
     </div>
-   
     <div class="contact-wrapper">
-        <h1 class="section">Contact Me</h1>
-        <br />
-        <div class="container">
-            <br />
-            <form>
-                <div class="name">
-                    <label for="name">Name</label>
-                    <input placeholder="John Doe" type="text" id="name" name="user_name">
-                </div>
+        <div class="card">
+            <div class="card-body">
+                <h1 class="section">Contact Me</h1>
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                          <input placeholder="John Doe" type="email" class="form-control" id="exampleFormControlInput1" >
+                        </div>
+                        <div class="form-group">
+                            <label for="email-address1">Email address</label>
+                            <input placeholder="name@example.com" type="email" class="form-control" id="exampleFormControlInput1" >
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleFormControlTextarea1">Message</label>
+                          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                        <button href="#" type="button" class="btn btn-info">Submit</button>
+                      </form>
+                    </div>
+                  </div>
                 
-                <div class="email">
-                    <label for="mail">E-mail</label>
-                    <input placeholder="person@example.com" type="email" id="mail" name="user_mail">
-                </div>
-                
-                <div class="msg-box">
-                    <label for="msg">Message</label>
-                    <textarea id="msg" name="user_message"></textarea>
-                </div>
-                <div>
-                    <a class="submit" href="#">Submit</a>
-                </div>
-            </form>
-        </div>
+        </div> 
     </div>
-    <div class="footer">Copyright ©</div>
+    <div class="card-footer">Copyright ©</div>
 </body>
 </html>

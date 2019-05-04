@@ -3,48 +3,77 @@
 <head>
     <meta charset="UTF-8" />
     <title>Katie Vogel's Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="Assets/CSS/style.css">   
 </head>
-
 
 <body>
     <div class="header-space">
         <header>
-            <h1 class="header-name">Katie Vogel</h1>
-        <div class="navbar">
-            <a class="index" href="index.html">About</a>
-            <a class="portfolio" href="portfolio.html">Portfolio</a>
-            <a class="contact" href="contact.html">Contact</a> 
-        </div>
+            <nav class="navbar fixed-top navbar-expand-sm navbar-light">
+                <a class="navbar-brand">Katie Vogel</a>
+                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup"></div>
+                          <div class="navbar-nav">
+                            <a class="nav-item nav-link" href="index.html">About <span class="sr-only">(current)</span></a>
+                            <a class="nav-item nav-link" href="portfolio.html">Portfolio</a>
+                            <a class="nav-item nav-link" href="contact.html">Contact</a>
+                          </div>
+                        </div>
+            </nav>
         </header>
     </div>
 
-    <div class="port-wrapper">
-        <h1 class="section">Portfolio</h1>
-        <br />
-            <div class="container">
-                <div class="img-box1">
-                    <img class="port-img" src="https://placekitten.com/g/200/200" alt="Holder 1">
-                    <div class="img-text">Word Game</div>
-                </div>
-                <div class="img-box2">
-                    <img class="port-img" src="https://placekitten.com/g/200/200" alt="Holder 2">
-                    <div class="img-text">RPG Game</div>
-                </div>
-                <div class="img-box3">
-                    <img class="port-img" src="https://placekitten.com/g/200/200" alt="Holder 3">
-                    <div class="img-text">Trivia Game</div>
-                </div>
-                <div class="img-box4">
-                    <img class="port-img" src="https://placekitten.com/g/200/200" alt="Holder 4">
-                    <div class="img-text">Info Widget</div>
-                </div>
-                <div class="img-box5">
-                    <img class="port-img" src="https://placekitten.com/g/200/200" alt="Holder 5">
-                    <div class="img-text">Bear Ninja Cowboy</div>
-                </div>
-            </div>
+    <div class="wrapper">
+            <div class="card">
+                <div class="card-body">
+                    <h1 class="section">Portfolio</h1>
+                        <!-- <div class="container">-->
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="card text-white">
+                                    <img height=200 width=200 src="https://placekitten.com/g/200/200" class="card-img" alt="Holder 1">
+                                        <div class="card-img-overlay">
+                                            <h5 class="card-title">Word Game</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card text-white">
+                                    <img height=200 width=200 src="https://placekitten.com/g/200/200" class="card-img" alt="Holder 1">
+                                        <div class="card-img-overlay">
+                                            <h5 class="card-title">RPG Game</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">   
+                                    <div class="card text-white">
+                                    <img height=200 width=200 src="https://placekitten.com/g/200/200" class="card-img" alt="Holder 1">
+                                        <div class="card-img-overlay">
+                                            <h5 class="card-title">Trivia Game</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4">   
+                                    <div class="card text-white">
+                                    <img height=200 width=200 src="https://placekitten.com/g/200/200" class="card-img" alt="Holder 1">
+                                        <div class="card-img-overlay">
+                                            <h5 class="card-title">Info Widget</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card text-white">
+                                    <img height=200 width=200 src="https://placekitten.com/g/200/200" class="card-img" alt="Holder 1">
+                                        <div class="card-img-overlay">
+                                            <h5 class="card-title">Bear Ninja Cowboy</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                                 
+                        </div>
     </div>
-    <div class="footer">Copyright ©</div>
+    <div class="card-footer">Copyright ©</div>
 </body>
 </html>
