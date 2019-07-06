@@ -31,7 +31,7 @@ body {
     top: 50px;
 }
 
-.card-img, .card-img-overlay, .card.text-white {
+.card-img, .card-img-overlay {
     height: 200px;
     width: 200px;
     margin: 20px;
