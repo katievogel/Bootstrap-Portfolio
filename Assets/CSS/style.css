@@ -1,10 +1,28 @@
 body { 
     margin: 0 auto;
     overflow: visible;
-    background-color: #ebf5fa;
-    background-image: url("https://www.transparenttextures.com/patterns/gplay.png");
-
+    background-color: #fafcfd;
 } 
+
+.welcome-background {
+    background-color: #001238;
+    color: white!important;
+    font-family: 'Julius Sans One', sans-serif; 
+}
+
+.welcome-card, .welcome-wrapper, .welcome-card-body, .welcome-enter {
+    position: relative;
+    margin: auto;
+    max-width: 300px;
+    top: 150px;
+    text-align: center;
+
+}
+
+a {
+    color: white
+}
+
 
 .navbar.navbar-expand.navbar-dark.bg-dark{
     background-color: #001238!important;
@@ -21,14 +39,18 @@ body {
 }
 
 .wrapper {
-    max-width: 960px;
+    max-width: 745px;
     margin: auto;
     padding: auto;
+    display: block;
 }
+
 .card {
     position: relative;
     resize: both;
-    top: 50px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    border: none;
 }
 
 .card-img, .card-img-overlay {
@@ -56,6 +78,7 @@ p {
  
 .me {
     margin: 5px 20px 5px 10px;
+    border-radius: 50em;
 }
 
 .contact-wrapper {
@@ -76,3 +99,43 @@ p {
     text-align: center;
     font-family: 'Julius Sans One', sans-serif;
 }
+
+/* The sidebar menu */
+.sidenav {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 215px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+    background-color: #001238!important;
+    font-family: 'Julius Sans One', sans-serif;
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 10px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 30px;
+    color: white!important;
+    display: block;
+    text-align: center;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+html {
+    scroll-behavior: smooth;
+  }
+  
