@@ -43,14 +43,15 @@ a {
     margin: auto;
     padding: auto;
     display: block;
+    margin-left: 240px;
 }
 
 .card {
     position: relative;
     resize: both;
     margin-top: 50px;
-    margin-bottom: 100px;
     border: none;
+    background-color: #fafcfd;
 }
 
 .card-img, .card-img-overlay {
@@ -68,7 +69,7 @@ a {
     border-bottom: solid lightgray;
 }
 
-p {
+p, .my_text {
     font-family: Tahoma, Geneva, sans-serif;
     margin: 15px 20px;
     color: #777777;
@@ -76,6 +77,11 @@ p {
     float: left; 
 }
  
+ul, li {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
 .me {
     margin: 5px 20px 5px 10px;
     border-radius: 50em;
@@ -139,3 +145,12 @@ html {
     scroll-behavior: smooth;
   }
   
+i {
+    color: black!important;
+    font-size: 3em;     
+  }
+
+.connect {
+    display: inline-block;
+    margin: 15px;
+  }
